@@ -117,7 +117,7 @@ function thacker_event_content_default_fields() {
     ),
     'timezone_db' => 'UTC',
     'tz_handling' => 'site',
-    'todate' => '',
+    'todate' => 'optional',
     'repeat' => 0,
     'repeat_collapsed' => '',
     'default_format' => 'medium',
