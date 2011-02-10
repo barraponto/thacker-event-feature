@@ -17,7 +17,7 @@ function thacker_event_block($op = 'list', $delta = 0, $edit = array()) {
       // Your module will need to define this function to render the block.
       $block = array(
         'subject' => '', 
-        'content' => l(t('Create a new event'), 'node/add/dt_event'),
+        'content' => l(t('Create a new event'), 'node/add/dt-event'),
       );
       return $block;
     }
