@@ -180,6 +180,8 @@ function thacker_event_content_default_fields() {
     'multiple' => '0',
     'module' => 'geo',
     'active' => '1',
+    'srid' => '',
+    'geo_type' => '',
     'widget' => array(
       'geocode_fields' => array(
         'field_event_address' => array(

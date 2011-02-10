@@ -92,6 +92,47 @@ function thacker_event_views_default_views() {
       'field' => 'field_event_date_value',
       'relationship' => 'none',
     ),
+    'field_event_address_street1' => array(
+      'label' => '',
+      'alter' => array(
+        'alter_text' => 0,
+        'text' => '',
+        'make_link' => 0,
+        'path' => '',
+        'link_class' => '',
+        'alt' => '',
+        'prefix' => '',
+        'suffix' => '',
+        'target' => '',
+        'help' => '',
+        'trim' => 0,
+        'max_length' => '',
+        'word_boundary' => 1,
+        'ellipsis' => 1,
+        'html' => 0,
+        'strip_tags' => 0,
+      ),
+      'empty' => '',
+      'hide_empty' => 0,
+      'empty_zero' => 0,
+      'link_to_node' => 0,
+      'label_type' => 'none',
+      'format' => 'city',
+      'multiple' => array(
+        'group' => TRUE,
+        'multiple_number' => '',
+        'multiple_from' => '',
+        'multiple_reversed' => FALSE,
+      ),
+      'exclude' => 0,
+      'id' => 'field_event_address_street1',
+      'table' => 'node_data_field_event_address',
+      'field' => 'field_event_address_street1',
+      'override' => array(
+        'button' => 'Override',
+      ),
+      'relationship' => 'none',
+    ),
     'view_node' => array(
       'label' => '',
       'alter' => array(
@@ -208,7 +249,7 @@ function thacker_event_views_default_views() {
     ),
     'row' => array(
       'element_type' => 'div',
-      'class' => '',
+      'class' => 'event',
       'last_every_nth' => '0',
       'first_class' => 'first',
       'last_class' => 'last',
@@ -220,18 +261,22 @@ function thacker_event_views_default_views() {
     'semantic_html' => array(
       'title' => array(
         'element_type' => 'div',
-        'class' => '',
+        'class' => 'title',
       ),
       'field_event_date_value' => array(
         'element_type' => 'div',
-        'class' => '',
+        'class' => 'date',
+      ),
+      'field_event_address_street1' => array(
+        'element_type' => 'div',
+        'class' => 'city',
       ),
       'view_node' => array(
         'element_type' => 'div',
-        'class' => '',
+        'class' => 'more',
       ),
     ),
-    'skip_blank' => 0,
+    'skip_blank' => 1,
   ));
   $handler = $view->new_display('block', 'Block', 'block_1');
   $handler->override_option('block_description', '');
