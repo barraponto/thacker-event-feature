@@ -1,0 +1,11 @@
+<?php
+
+function thacker_event() {
+  module_load_include('inc', 'thacker_event', 'thacker_event.strongarm');
+
+  $variables = thacker_event_strongarm();
+
+  foreach ($variables as $variable) {
+    variable_set($variable->name, serialize($variable->value));
+  }
+}
